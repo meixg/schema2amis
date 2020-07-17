@@ -1,0 +1,27 @@
+{
+  "name": "schema2amis",
+  "version": "1.0.0",
+  "description": "Compile (XML/JSON) schema to Amis JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meixg/schema2amis.git"
+  },
+  "author": "meixg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meixg/schema2amis/issues"
+  },
+  "homepage": "https://github.com/meixg/schema2amis#readme",
+  "dependencies": {
+    "jgexml": "^0.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
