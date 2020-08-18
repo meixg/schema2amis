@@ -1,6 +1,6 @@
 {
   "name": "schema2amis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compile (XML/JSON) schema to Amis JSON",
   "main": "dist/index.js",
   "scripts": {
