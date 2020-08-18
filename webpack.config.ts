@@ -10,6 +10,11 @@ const config: webpack.Configuration = {
         filename: 'index.js',
         libraryTarget: 'commonjs'
     },
+    externals: [
+        'jgexml/xsd2json',
+        'jgexml/xml2json',
+        'lodash/get'
+    ],
     resolve: {
         extensions: ['.ts', '.js']
     },
