@@ -1,9 +1,10 @@
 {
   "name": "schema2amis",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Compile (XML/JSON) schema to Amis JSON",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "webpack && tsc --declaration --outDir dist/ --emitDeclarationOnly -p ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,11 +23,19 @@
     "lodash": "^4.17.19"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/json-schema": "^7.0.5",
-    "@types/node": "^14.0.23",
+    "@types/node": "^14.0.27",
+    "@types/webpack": "^4.41.21",
     "amis": "^1.0.14",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "json-schema": "^0.2.5",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
