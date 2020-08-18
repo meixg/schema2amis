@@ -8,7 +8,7 @@ const config: webpack.Configuration = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        libraryTarget: 'commonjs'
+        libraryTarget: 'umd'
     },
     externals: [
         'jgexml/xsd2json',
